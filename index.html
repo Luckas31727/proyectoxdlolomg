@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osu!:3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            background-color: #1f1f1f;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2a2a2a;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e2609a;
+        }
+
+        .login-button {
+            background-color: #e2609a;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #c2487a;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .hero-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-stats {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #e2609a;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #c2487a;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 60px 20px;
+            background-color: #2a2a2a;
+        }
+
+        .feature {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #e2609a;
+        }
+
+        .feature p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="https://osu.ppy.sh">
+                <img src="https://osu.ppy.sh/images/favicon/apple-touch-icon.png" alt="osu! logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Mapas</a></li>
+            <li><a href="#">Clasificaciones</a></li>
+            <li><a href="#">Comunidad</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="login-button">Iniciar Sesión</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-background">
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="https://assets.ppy.sh/media/landing.mp4" type="video/mp4">
+                Tu navegador no soporta videos.
+            </video>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">El mejor juego de ritmo gratis</h1>
+            <p class="hero-stats">24,594,555 usuarios registrados, 9,499 en línea en 192 partidas</p>
+            <a href="#" class="cta-button">Descargar osu!</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature">
+            <h2>Mapas de Ritmo</h2>
+            <p>Explora miles de mapas creados por la comunidad.</p>
+        </div>
+        <div class="feature">
+            <h2>Clasificaciones</h2>
+            <p>Compite globalmente y mejora tu posición.</p>
+        </div>
+        <div class="feature">
+            <h2>Comunidad</h2>
+            <p>Únete a millones de jugadores alrededor del mundo.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p> Clon de Osu! :3</p>
+    </footer>
+</body>
+</html>
